@@ -14,7 +14,24 @@ const CreateClients = async (req, res) => {
       },
     });
 
-    data.push(...data, response.data);
+    const fakeData = {
+      name: "FakeName",
+      middleName: "FakeMiddleName",
+      fLastName: "FakeFLastName",
+      sLastName: "FakeSLastName",
+      status: "pendiente",
+      email: "fakeEmail",
+      birthday: "1998-02-12",
+      phone: "3333333333",
+      assignedAnalyst: "Daniel",
+      cardInfo: {
+        number: response.data.cardNumber,
+        cvv: response.data.cvv,
+        pin: response.data.pin,
+        expiration: response.data.date,
+      },
+    };
+    data.push(fakeData);
 
     return res
       .status(200)
