@@ -1,0 +1,76 @@
+.card-main-div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px;
+}
+.card-title-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  color: rgb(0, 24, 102);
+  font-size: 24px;
+  margin: 0;
+}
+
+.card-headers {
+  display: flex;
+  align-items: center;
+}
+
+.card-selector {
+  background-color: rgb(0, 60, 255);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.card-delete {
+  background-color: rgb(235, 88, 88);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.card-inner-div-1,
+.card-inner-div-2 {
+  flex: 1;
+}
+
+.card-inner-div-2 {
+  background-color: #eee;
+  border-radius: 10px;
+}
+.card-info-div {
+  display: flex;
+}
+
+.card-subtitle {
+  color: rgb(179, 179, 179);
+  font-size: 15px;
+}
+
+.card-edit-btn {
+  align-self: flex-end;
+  margin: 5px;
+  width: fit-content;
+  margin-right: 10px;
+}
